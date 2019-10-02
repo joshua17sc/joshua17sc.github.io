@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./favicon.png" />
+  <meta name="theme-color" content="#000000" />
+  <title>Joshua 1:7 Strong and Courageous</title>
+  <link rel="stylesheet" type="text/css" href="src\css\form_page.css">
+  <!-- Add additional CSS & JS files as necessary here -->
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Signup for Goodies</h1>
+  </header>
+  <div id="form-outer">
+    <p id="description">
+      Sign-up for free stuff from our sponsors!
+    </p>
+    <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+      <div class="rowTab">
+        <div class="labels">
+          <label id="name-label" for="name">* Name: </label>
+        </div>
+        <div class="rightTab">
+          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for="email">* Email: </label>
+        </div>
+        <div class="rightTab">
+          <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="number-label" for="age">* Age: </label>
+        </div>
+        <div class="rightTab">
+          <input type="number" name="age" id="number" min="1" max="92" class="input-field" placeholder="Age">
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="currentPos">Which option best describes your current role?</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="userRating">* Do you like getting free stuff?</label>
+        </div>
+        <div class="rightTab">
+          <ul style="list-style: none;">
+            <li class="radio"><label>Always<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>
+            <li class="radio"><label>Sometimes<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>
+            <li class="radio"><label>Never<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="most-like">What is your favorite kind of free stuff: </label>
+        </div>
+        <div class="rightTab">
+          <select id="most-like" name="mostLike" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Cash Money</option>
+            <option value="projects">Event Tickets</option>
+            <option value="community">Food</option>
+            <option value="openSource">Things I Can Wear</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="preferences">Things I have received as prizes in the past<br>(Check all that apply): </label>
+        </div>
+        <div class="rightTab">
+          <ul id="preferences" style="list-style: none;">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Concert Tickets</label></li>
+            <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
+            <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Theme Park Passes</label></li>
+            <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Gift Cards</label></li>
+            <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Cash</label></li>
+            <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Airline Tickets</label></li>
+            <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Cruise Tickets</label></li>
+            <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Hotel Stays</label></li>
+            <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Free Dinner</label></li>
+            <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Clothes (Hats, shirts, etc.)</label></li>
+            <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Knick-knacks (stickets, keychains, etc.)</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">What is the ideal free giveaway item to you?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <footer>
+    <p id="copyright">&copy; Created for <a id="copy-link" href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a></p>
+  </footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <!-- ================================ -->
+  <!-- Add more JavaScript files here!! -->
+  <!-- ================================ -->
+  <script type="text/javascript" src="src/js/other.js"></script>
+  <script type="text/javascript" src="src/js/index.js"></script>
+</body>
+
+</html>
