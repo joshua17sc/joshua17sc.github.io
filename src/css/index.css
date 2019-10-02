@@ -1,28 +1,112 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2b2b2b;
-  color: rgb(214, 214, 214);
-  max-width: 900px;
-  margin: 0 auto;
+  min-width: 300px;
+  font-size: 18pt;
+  font-family: "fantasy", Arial, sans-serif;
+  background: black;
+  text-align: center;
 }
 
-#root {
-  background-color: #3f3f3f;
-  padding: 60px;
-  border-radius: 20px;
-  height: 100%;
-  margin-top: 100px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto;
+header {
+  background: linear-gradient(to right,
+      red,
+      orange,
+      yellow,
+      gold,
+      orange,
+      red,
+      red,
+      orange,
+      gold,
+      yellow,
+      orange,
+      red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  height: 100vh;
+  line-height: 20vh;
+  text-align: center;
 }
 
-h1 {
-  margin-top: 50px;
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  background: black;
 }
 
-p {
-  font-size: 22px;
+.nav-link {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+navbar a:hover {
+  color: cyan;
+}
+
+.project {
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  border: 4px solid darkgrey;
+  height: 220px;
+  width: 280px;
+  margin: 40px 0;
+  background: SaddleBrown;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.project-pic {
+  width: 100%;
+  height: 90%;
+  border-top: 4px solid darkgrey;
+}
+
+.project-title {
+  font-weight: bold;
+  color: Silver;
+}
+
+main {
+  background: url("https://c.pxhere.com/photos/47/05/wood_floor_laminate_surface_texture_hardwood_softwood_wooden-1235241.jpg!d");
+}
+
+#profile-img {
+  width: 100px;
+}
+
+@media only screen and (min-width: 500px) {
+  #navbar {
+    text-align: right;
+  }
+
+  .project {
+    margin: 40px 100px;
+  }
+}
+
+#contact {
+  background: url("https://c.pxhere.com/photos/dd/e7/fire_background_flame_black_hot_blazing_inferno_burn-1062207.jpg!d");
+}
+
+#copyright {
+  color: white;
+}
+
+#copy-link {
+  text-decoration: none;
+  color: gray;
 }

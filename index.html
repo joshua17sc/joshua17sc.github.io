@@ -1,42 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="shortcut icon" href="./favicon.png" />
-        <meta name="theme-color" content="#000000" />
-        <title>Simple Boilerplate</title>
-        <link rel="stylesheet" type="text/css" href="src/css/index.css">
-        <!-- Add additional CSS & JS files as necessary here -->
-    </head>
-    <body>
-        <!-- Add your site or application content here -->
-        <div id="root">
-            <img src="src/assets/simple-boilerplate-logo@3x.png" class="logo" alt="logo" />
-            <h1>Welcome to Simple Boilerplate!</h1>
-            <p>
-                This boilerplate is ready for HTML/CSS, Javascript, and JQuery projects. 
-                It includes a live server that lets you see HTML/JS/CSS changes with every save.
-            </p>
-            
-            <p id="subtext">
-                An Example JavaScript Hook.
-            </p>
 
-            <h2>Instructions:</h2>
-            <p>
-                To see live changes, please go to the root folder ('simple-boilerplate/')
-                and run "npm start".
-            </p>
-            <p>
-                To start coding, start changing the files within src/css and src/js. 
-                Images can be stored in src/assets.
-            </p>
-        </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-        <!-- ================================ -->
-        <!-- Add more JavaScript files here!! -->
-        <!-- ================================ -->
-        <script type="text/javascript" src="src/js/other.js"></script>
-        <script type="text/javascript" src="src/js/index.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./favicon.png" />
+  <meta name="theme-color" content="#000000" />
+  <title>Joshua 1:7 Strong and Courageous</title>
+  <link rel="stylesheet" type="text/css" href="src/css/index.css">
+  <!-- Add additional CSS & JS files as necessary here -->
+</head>
+
+<body>
+  <navbar id="navbar">
+    <a class="nav-link" href="#welcome-section">Home</a>
+    <a class="nav-link" href="#projects">Projects</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </navbar>
+  <header id="welcome-section">
+    <h1><br>I am<br>Joshua17sc<br>Web Developer</h1>
+  </header>
+  <main>
+    <h2><br>Check out my Responsive Web Design Projects
+    </h2>
+    <projects id="projects">
+      <div class="project-tile">
+        <a href="https://codepen.io/joshua17sc/full/aPQgzJ" class="project">
+          <div class="project-title">My Form Page</div><img class="project-pic" src="src\assets\form_page.PNG" alt="printscreen of my form page">
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="https://codepen.io/joshua17sc/full/ebQwbE" class="project">
+          <div class="project-title">My Landing Page</div><img class="project-pic" src="src\assets\landing_page.PNG" alt="printscreen of my landing page">
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="https://codepen.io/joshua17sc/full/KbYJga" class="project">
+          <div class="project-title">My Documentation Page</div><img class="project-pic" src="src\assets\documentation_page.PNG" alt="printscreen of my documentation page">
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="https://codepen.io/joshua17sc/full/GPYyoq" class="project">
+          <div class="project-title">My Tribute Page</div> <img class="project-pic" src="src\assets\tribute_page.PNG" alt="printscreen of my tribute page">
+        </a>
+      </div>
+    </projects>
+    <div id="contact">
+      <h2>Contact me so we can work on a project together</h2>
+      <a id="profile-link" href="https://github.com/joshua17sc" target="_blank"><img id="profile-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"
+          alt="my github profile link"></a>
+    </div>
+  </main>
+  <footer>
+    <p id="copyright">&copy; Created for <a id="copy-link" href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp</a></p>
+  </footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <!-- ================================ -->
+  <!-- Add more JavaScript files here!! -->
+  <!-- ================================ -->
+  <script type="text/javascript" src="src/js/other.js"></script>
+  <script type="text/javascript" src="src/js/index.js"></script>
+</body>
+
 </html>
